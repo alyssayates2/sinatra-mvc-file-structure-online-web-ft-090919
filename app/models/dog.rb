@@ -6,4 +6,4 @@ class Dog < ActiveRecord::Migrate[5.1]
       t.integer :age
     end
   end
-end 
+end
