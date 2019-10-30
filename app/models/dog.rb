@@ -1,9 +1,5 @@
-class Dog < ActiveRecord::Migrate[5.1]
-  def change
-    create_table :dogs do |t|
-      t.string :name
-      t.string :breed
-      t.integer :age
-    end
-  end
+class Dog < ActiveRecord::Base
+  belongs_to :breed
+  has_one :age
+  has_one :name
 end
