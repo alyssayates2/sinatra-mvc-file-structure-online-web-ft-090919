@@ -1,9 +1,12 @@
-class Dog < ActiveRecord::Base
-  def change
-    create_table :dogs do |t|
-      t.string :name
-      t.string :breed
-      t.integer :age
-    end
+class Dog
+  attr_accessor :name, :breed, :age
+
+  @@all = []
+
+  def initialize(name, breed, age)
+      @name = name
+      @breed = breed
+      @age = age
+      @@all << self
   end
 end
