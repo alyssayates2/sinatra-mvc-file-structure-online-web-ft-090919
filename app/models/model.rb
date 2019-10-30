@@ -1,3 +1,3 @@
 class Model
- c
+
 end
