@@ -1,4 +1,4 @@
-class Dog < ActiveRecord::Migrate[5.1]
+class Dog < ActiveRecord::Base
   def change
     create_table :dogs do |t|
       t.string :name
